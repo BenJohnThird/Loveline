@@ -3,7 +3,7 @@
     width: 100%;
     display: grid;
     grid-template-columns: 50% 45% 5%;
-    grid-template-rows:35% 20% 5% 50%;
+    grid-template-rows:35% 20% 5% auto;
     grid-template-areas: 
         "couple headline space"
         "couple subtext space"
@@ -64,4 +64,11 @@
 
 .wave {
     grid-area: wave;
+    height: 100%;
+    width: 100%;
+    align-items: flex-end;
+    display: flex;
+    img {
+        width: 100%
+    }
 }

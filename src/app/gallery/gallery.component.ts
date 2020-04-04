@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { GalleryItem, ImageItem } from '@ngx-gallery/core';
 
 @Component({
   selector: 'app-gallery',
@@ -7,9 +8,55 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GalleryComponent implements OnInit {
 
+  images: GalleryItem[];
+  realMessage: string;
+  private isRunning: boolean = false;
   constructor() { }
 
   ngOnInit() {
+    this.images = [
+      new ImageItem({ src: '../../assets/images/anniv.jpg', thumb: '../../assets/images/anniv.jpg' }),
+      new ImageItem({ src: '../../assets/images/couple-1.jpg', thumb: '../../assets/images/couple-1.jpg' }),
+      new ImageItem({ src: '../../assets/images/couple-2.jpg', thumb: '../../assets/images/couple-2.jpg' }),
+      new ImageItem({ src: '../../assets/images/couple-3.jpg', thumb: '../../assets/images/couple-3.jpg' }),
+      new ImageItem({ src: '../../assets/images/couple-4.jpg', thumb: '../../assets/images/couple-4.jpg' }),
+      new ImageItem({ src: '../../assets/images/couple-5.jpg', thumb: '../../assets/images/couple-5.jpg' }),
+      new ImageItem({ src: '../../assets/images/couple-6.jpg', thumb: '../../assets/images/couple-6.jpg' })
+    ];
+
+    this.realMessage = `    HI LOVE
+
+    I just want to say na sobra kong
+    swerte sayo kasi you are the best.
+    God gave me you. Sana magustuhan
+    mo itong simpleng effort na ginawa ko
+    para sayo.
+  
+    I always pray and pray to God
+    for him to be the CENTER of our relationship.
+    I always pray to HIM na sana tayo na FOREVER.
+    Hindi natin kaya yung problema pero kaya niya
+    kaya sa kanya tayo lalapit.
+  
+    Nag-aaway man tayo minsan, minsan tinotopak ako,
+    minsan ikaw naman pero ano man ang mangyari,
+    KAPIT LANG. Naks.`;
+  }
+
+  onIndexChange(params) {
+    this.playAudio();
+  }
+
+  playAudio() {
+    if(!this.isRunning) {
+      let audio = new Audio();
+      audio.src = '../../assets/sounds/Kodaline.mp3';
+      audio.load();
+      //audio.play();
+      audio.volume = 0.4;
+      audio.loop = true;
+      this.isRunning = true;
+    }
   }
 
 }

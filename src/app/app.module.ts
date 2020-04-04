@@ -9,6 +9,10 @@ import { PoemsComponent } from './poems/poems.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { GalleryModule } from  '@ngx-gallery/core';
+import { GALLERY_CONFIG } from '@ngx-gallery/core';
+import 'hammerjs';
 
 @NgModule({
   declarations: [
@@ -22,9 +26,20 @@ import { AboutComponent } from './about/about.component';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
+    GalleryModule,
+    GalleryModule.withConfig({}),
     AppRoutingModule
   ],
-  providers: [],
+  providers: [    
+    {
+      provide: GALLERY_CONFIG,
+      useValue: {
+        dots: true,
+        imageSize: 'cover'
+      }
+  }
+],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

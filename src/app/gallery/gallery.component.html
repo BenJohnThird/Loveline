@@ -1,3 +1,23 @@
-<p>
-  gallery works!
-</p>
+<div class="container">
+  <div class="title">
+    <p class="bold">GALLERY</p>
+  </div>
+  <div class="icon">
+    <img src="../../assets/images/Gallery page - icon.svg">
+  </div>
+  <div class="content">
+    <gallery id="gallery-section" 
+    [items]="images" 
+    [thumbPosition]="'left'"
+    [slidingDirection]="'vertical'"
+    [loop]="true"
+    [autoPlay]="true"
+    [counter]="false"
+    [nav]="false"
+    [playerInterval]="5000"
+    (indexChange)="onIndexChange($event)"></gallery>
+  </div>
+  <div class="message">
+    {{realMessage}}
+  </div>
+</div>
