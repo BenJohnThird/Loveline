@@ -1,19 +1,29 @@
-<div class="container">
-  <div class="item loveline">
-    LOVELINE
-  </div>
-  <div class="item bennana">
-    BENANNA
-  </div>
-  <div class="item logo">
-    <img src="../../assets/images/logo.png">
-  </div>
-  <div class="item gallery">
-    GALLERY
-  </div>
-  <div class="item contact">
-    <span>
-      CONTACT
-    </span>
-  </div>
+<div class="container" #navBarContainer>
+  <ng-container *ngIf="isMobile">
+    <div class="item loveline">
+      LOVELINE
+    </div>
+    <div class="item logo">
+      <img src="../../assets/images/logo.png">
+    </div>
+  </ng-container>
+  <ng-container *ngIf="!isMobile">
+    <div class="item loveline">
+      LOVELINE
+    </div>
+    <div class="item bennana">
+      BENANNA
+    </div>
+    <div class="item logo">
+      <img src="../../assets/images/logo.png">
+    </div>
+    <div class="item gallery">
+      GALLERY
+    </div>
+    <div class="item contact">
+      <span>
+        CONTACT
+      </span>
+    </div>
+  </ng-container>
 </div>
