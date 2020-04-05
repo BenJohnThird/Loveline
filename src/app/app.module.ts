@@ -13,6 +13,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GalleryModule } from  '@ngx-gallery/core';
 import { GALLERY_CONFIG } from '@ngx-gallery/core';
 import 'hammerjs';
+import { MaterialModule } from './material/material.module';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import 'hammerjs';
     BrowserAnimationsModule,
     GalleryModule,
     GalleryModule.withConfig({}),
+    //MaterialModule,
     AppRoutingModule
   ],
   providers: [    

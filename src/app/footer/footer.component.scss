@@ -6,7 +6,31 @@
     justify-content: center;
     align-items: center;
 }
+@media (min-width: 320px) {
+    img {
+        width: 60%;
+    }
+}
+@media (min-width: 640px) {
+    img {
+        width: 60%;
+    }
+}
 
-img {
-    width: 60%
+@media (min-width: 768px) {
+    img {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1024px) {
+    img {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1280px) {
+    img {
+        width: 100%
+    }
 }

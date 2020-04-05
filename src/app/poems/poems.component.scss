@@ -140,6 +140,31 @@
         font-size: .7rem;
         line-height: normal !important;
         font-family: 'Montserrat', sans-serif;
+        overflow-y: auto;
+    }
+    .title {
+        p {
+            font-size: 3rem;
+        }
+    }
+
+    .poem-container {
+        border-radius: 10%;
+    }
+
+    .poem-title {
+        font-size: 1.1rem !important;
+    }
+
+    .main-section {
+        position: relative;
+    }
+
+    .wave {
+        display: flex;
+        align-items: flex-end;
+        align-items: flex-end;
+        z-index: 1;
     }
 }
 
@@ -156,6 +181,9 @@
             "headline poem1"
             "couple poem2";
     }
+    .poem-container {
+        border-radius: 71px;
+    }
 
     .poem-content {
         width: 80%;
@@ -163,13 +191,30 @@
         font-size: .7rem;
         line-height: normal !important;
         font-family: 'Montserrat', sans-serif;
+        overflow-y: auto;
+    }
+    .title {
+        p {
+            font-size: 72px;
+        }
+    }
+    .poem-title {
+        font-size: 24px;
+    }
+
+    .main-section {
+        position: absolute;
     }
 }
 
 @media (min-width: 768px) {
+    .poem-container {
+        border-radius: 71px;
+    }
     .poem-content {
         font-size: .7rem;
         line-height: 24px !important;
+        overflow-y: hidden;
     }
     .section-container {
         position: relative;
@@ -180,13 +225,37 @@
         grid-template-rows: 100%;
         grid-template-areas: 
             "headline poem1 couple poem2"
+            
+    }
+    .title {
+        p {
+            font-size: 72px;
+        }
+    }
+    .poem-title {
+        font-size: 24px;
+    }
+
+    .main-section {
+        position: absolute;
+    }
+
+    .couple {
+        img {
+            width: 300px;
+            height: 100% !important;
+        }
     }
 }
 
 @media (min-width: 1024px) {
+    .poem-container {
+        border-radius: 71px;
+    }
     .poem-content {
         font-size: .9rem;
         line-height: 24px !important;
+        overflow-y: hidden;
     }
     .section-container {
         position: relative;
@@ -197,13 +266,53 @@
         grid-template-rows: 100%;
         grid-template-areas: 
             "headline poem1 couple poem2"
+    }
+    .title {
+        p {
+            font-size: 72px;
+        }
+    }
+    .poem-title {
+        font-size: 24px !important;
+    }
+
+    .main-section {
+        position: absolute;
+    }
+
+    .couple {
+        img {
+            width: 300px !important;
+            height: 100%;
+        }
     }
 
 }
 
 @media (min-width: 1280px) {
+    .poem-container {
+        border-radius: 71px;
+    }
     .poem-content {
         font-size: 1rem;
         line-height: 24px !important;
+        overflow-y: hidden;
+    }
+    .title {
+        p {
+            font-size: 72px !important;
+        }
+    }
+    .poem-title {
+        font-size: 24px !important;
+    }
+    .main-section {
+        position: absolute;
+    }
+    .couple {
+        img {
+            width: 300px !important;
+            height: 100% !important;
+        }
     }
 }

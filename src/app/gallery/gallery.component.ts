@@ -21,7 +21,22 @@ export class GalleryComponent implements OnInit {
       new ImageItem({ src: '../../assets/images/couple-3.jpg', thumb: '../../assets/images/couple-3.jpg' }),
       new ImageItem({ src: '../../assets/images/couple-4.jpg', thumb: '../../assets/images/couple-4.jpg' }),
       new ImageItem({ src: '../../assets/images/couple-5.jpg', thumb: '../../assets/images/couple-5.jpg' }),
-      new ImageItem({ src: '../../assets/images/couple-6.jpg', thumb: '../../assets/images/couple-6.jpg' })
+      new ImageItem({ src: '../../assets/images/couple-6.jpg', thumb: '../../assets/images/couple-6.jpg' }),
+      new ImageItem({ src: '../../assets/images/couple-7.jpg', thumb: '../../assets/images/couple-7.jpg' }),
+      new ImageItem({ src: '../../assets/images/couple-8.jpg', thumb: '../../assets/images/couple-8.jpg' }),
+      new ImageItem({ src: '../../assets/images/couple-9.jpg', thumb: '../../assets/images/couple-9.jpg' }),
+      new ImageItem({ src: '../../assets/images/couple-10.jpg', thumb: '../../assets/images/couple-10.jpg' }),
+      new ImageItem({ src: '../../assets/images/couple-11.jpg', thumb: '../../assets/images/couple-11.jpg' }),
+      new ImageItem({ src: '../../assets/images/couple-12.jpg', thumb: '../../assets/images/couple-12.jpg' }),
+      new ImageItem({ src: '../../assets/images/couple-13.jpg', thumb: '../../assets/images/couple-13.jpg' }),
+      new ImageItem({ src: '../../assets/images/couple-14.jpg', thumb: '../../assets/images/couple-14.jpg' }),
+      new ImageItem({ src: '../../assets/images/couple-15.jpg', thumb: '../../assets/images/couple-15.jpg' }),
+      new ImageItem({ src: '../../assets/images/couple-16.jpg', thumb: '../../assets/images/couple-16.jpg' }),
+      new ImageItem({ src: '../../assets/images/couple-17.jpg', thumb: '../../assets/images/couple-17.jpg' }),
+      new ImageItem({ src: '../../assets/images/couple-18.jpg', thumb: '../../assets/images/couple-18.jpg' }),
+      new ImageItem({ src: '../../assets/images/couple-19.jpg', thumb: '../../assets/images/couple-19.jpg' }),
+      new ImageItem({ src: '../../assets/images/couple-20.jpg', thumb: '../../assets/images/couple-20.jpg' }),
+      new ImageItem({ src: '../../assets/images/couple-21.jpg', thumb: '../../assets/images/couple-21.jpg' })
     ];
 
     this.realMessage = `    HI LOVE
@@ -52,7 +67,7 @@ export class GalleryComponent implements OnInit {
       let audio = new Audio();
       audio.src = '../../assets/sounds/Kodaline.mp3';
       audio.load();
-      //audio.play();
+      audio.play();
       audio.volume = 0.4;
       audio.loop = true;
       this.isRunning = true;

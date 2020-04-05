@@ -1,26 +1,26 @@
 <div class="container" #navBarContainer>
   <ng-container *ngIf="isMobile">
-    <div class="item loveline">
+    <div class="item loveline nav-item">
       LOVELINE
     </div>
-    <div class="item logo">
+    <div class="item logo nav-item">
       <img src="../../assets/images/logo.png">
     </div>
   </ng-container>
-  <ng-container *ngIf="!isMobile">
-    <div class="item loveline">
+  <ng-container *ngIf="!isMobile" (click)="scrollTo('.landingPg')">
+    <div class="item loveline nav-item">
       LOVELINE
     </div>
-    <div class="item bennana">
+    <div class="item bennana nav-item" (click)="scrollTo('.poemsPg')">
       BENANNA
     </div>
     <div class="item logo">
       <img src="../../assets/images/logo.png">
     </div>
-    <div class="item gallery">
+    <div class="item gallery nav-item" (click)="scrollTo('.galleryPg')">
       GALLERY
     </div>
-    <div class="item contact">
+    <div class="item contact" (click)="scrollTo('.aboutPg')">
       <span>
         CONTACT
       </span>
