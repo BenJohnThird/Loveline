@@ -65,7 +65,7 @@ export class GalleryComponent implements OnInit {
   playAudio() {
     if(!this.isRunning) {
       let audio = new Audio();
-      audio.src = '../../assets/sounds/Kodaline.mp3';
+      audio.src = '../../assets/sounds/theone.mp3';
       audio.load();
       audio.play();
       audio.volume = 0.4;
